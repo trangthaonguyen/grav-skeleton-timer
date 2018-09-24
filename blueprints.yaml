@@ -1,0 +1,57 @@
+name: Timer
+description: "Grav theme for Timer Theme from https://themefisher.com/"
+version: 1.0.0
+icon: globe
+author:
+    name: Nguyen Trang
+    email: flatfiledeveloper@gmail.com
+    url: https://flatfiledeveloper.com
+license: MIT
+
+form:
+    validation: loose
+    fields:
+        copyright:
+            type: textarea
+            rows: 5
+            label: THEME.ADMIN.COPYRIGHT.LABEL
+            help: THEME.ADMIN.COPYRIGHT.HELP
+        logo:
+            type: filepicker
+            folder: 'theme@:/images'
+            preview_images: true
+            label: THEME.ADMIN.LOGO.LABEL
+            help: THEME.ADMIN.LOGO.HELP
+        favicon:
+            type: text
+            label: THEME.ADMIN.FAVICON.LABEL
+            help: THEME.ADMIN.FAVICON.HELP
+        social_icons: 
+            type: list
+            label: THEME.ADMIN.SOCIAL_ICONS
+            fields: 
+                .url: 
+                    type: text
+                    label: THEME.ADMIN.URL
+                .classes: 
+                    type: text
+                    label: THEME.ADMIN.CLASSES
+                .icon: 
+                    type: text
+                    label: THEME.ADMIN.ICON
+        cta:
+            type: section
+            title: THEME.ADMIN.CTA
+            fields: 
+                cta.title:
+                    type: text
+                    label: THEME.ADMIN.TITLE
+                cta.content:
+                    type: editor
+                    label: THEME.ADMIN.CONTENT
+                cta.button_url:
+                    type: text
+                    label: THEME.ADMIN.BUTTON_URL
+                cta.button_label: 
+                    type: text
+                    label: THEME.ADMIN.BUTTON_LABEL
